@@ -68,7 +68,7 @@ public class SwingControlDemo implements ActionListener {
             }
         });
         controlPanel = new JPanel();
-        controlPanel.setLayout(new BorderLayout()); //set the layout of the pannel
+        controlPanel.setLayout(new BorderLayout(150,150)); //set the layout of the pannel
         //controlPanel.setLayout(new BorderLayout());
 
         mainFrame.add(controlPanel);
@@ -122,4 +122,6 @@ public class SwingControlDemo implements ActionListener {
             }
         }
     }
+
+
 }
