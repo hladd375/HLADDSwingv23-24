@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class Hard implements ActionListener {
+public class CardLayout implements ActionListener {
     private JFrame mainFrame;
     private JMenuBar mb;
     private JMenu file, edit, help;
@@ -21,13 +21,13 @@ public class Hard implements ActionListener {
     private int HEIGHT=700;
 
 
-    public Hard() {
+    public CardLayout() {
         prepareGUI();
     }
 
     public static void main(String[] args) {
-        Hard hard = new Hard();
-        hard.showEventDemo();
+        CardLayout cardLayout = new CardLayout();
+        cardLayout.showEventDemo();
     }
 
     private void prepareGUI() {
@@ -35,7 +35,7 @@ public class Hard implements ActionListener {
 
         mainFrame = new JFrame("Henry Ladd Learing SWING");
         mainFrame.setSize(WIDTH, HEIGHT);
-        mainFrame.setLayout(new GridLayout(2,1));
+        mainFrame.setLayout(new java.awt.CardLayout());
 
 
 
@@ -195,6 +195,7 @@ public class Hard implements ActionListener {
 
 
 }
+
 
 
 
